@@ -1,0 +1,55 @@
+body {
+  background: url('image/demdaysao.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 100px; 
+  height: auto;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.4); 
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%; 
+  margin: 0 auto; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.table-actions {
+  display: flex;
+  gap: 10px;
+}
+
+#studentForm {
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table {
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}

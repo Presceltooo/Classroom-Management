@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCSE - 2022</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-flex align-items-center justify-content-between py-3">
+        <img src="image/vju.png" alt="Header Image" class="img-fluid" style="width: 6%;">
+        <h1 class="text-center flex-grow-1">BCSE - 2022</h1>
+        <img src="image/dhqghn.png" alt="Right Header Image" class="img-fluid" style="width: 6%;">
+    </header>
+
+    <div class="container bg-light p-4 rounded">
+        <h2 class="my-4">Classroom Members</h2>
+        <form id="studentForm" class="mb-4">
+            <div class="form-group">
+                <label for="studentID">Student ID:</label>
+                <input type="text" class="form-control" id="studentID" name="studentID" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select class="form-control" id="sex" name="sex" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Member</button>
+        </form>
+
+        <h2 class="my-4">Class Members</h2>
+        <table class="table table-bordered" id="membersTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Birth Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Members will be dynamically added here -->
+            </tbody>
+        </table>
+
+        <button id="downloadCSV" class="btn btn-success">Download CSV</button>
+    </div>
+
+    <footer class="text-center py-3">
+        <p>D.T.C</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

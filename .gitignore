@@ -1,0 +1,6 @@
+# not commit to git 
+node_modules/*
+public/image/*
+class_members.csv
+package-lock.json
+package.json
